@@ -138,7 +138,14 @@ nav .lunch_btn {
 	left: -14rem;
 	top: 0;
 }
+.banner__abs .top-line {
+	position: absolute;
+	top: -5rem;
+	left: 10rem;
+	transform: translate3d(50%, 50%);
 
+	width: 50rem;
+}
 .banner__abs .right-line {
 	position: absolute;
 	right: -14rem;
