@@ -8,6 +8,7 @@
     --border-color: #404040;
     --border-radius: .31rem; 
     --linear-gradient: linear-gradient(#18181B, #18191B 0%);
+    --header-linear-gradient: -webkit-linear-gradient(#292929, #FFFFFF, #676767, #FFFFFF);
     --shadow: box-shadow: 0px 5px 49px 0px rgba(0, 0, 0, 0.69);
 }
 
@@ -149,8 +150,8 @@ nav .lunch_btn{
 }
 .banner__abs .right-layer{
     position: absolute;
-    right: 0rem;
-    bottom: 0;
+    right: 4rem;
+    bottom: 4rem;
     
 }
 
@@ -179,6 +180,11 @@ nav .lunch_btn{
     font-size: 4.87rem;
     font-family: orbitron;
     line-height: 1;
+    background: var(--header-linear-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 99;
 }
 
 .banner__join .banner__join-title{
@@ -193,9 +199,28 @@ nav .lunch_btn{
     padding: .2rem;
     border-radius: var(--border-radius);
     width: 32.8rem;
-    border:1px solid var(--border-color)
+    border:1px solid var(--border-color);
+    background-color: var(--background);
+    
 }
-
+.banner__join input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    flex: 1;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem;
+    z-index: 99;
+}
+.banner__join input::placeholder{
+    color: #ffffff;
+}
+.banner__join-button{
+    font-weight: 500;
+}
 .banner__join div p{
     padding-left: 2rem;
 }
@@ -512,7 +537,7 @@ nav .lunch_btn{
     font-family: orbitron;
     font-size: 4.06rem;
     font-weight: 600;
-    background: -webkit-linear-gradient(#292929, #FFFFFF, #676767, #FFFFFF);
+    background: var(--header-linear-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
