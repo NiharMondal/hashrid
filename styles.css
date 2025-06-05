@@ -600,9 +600,15 @@ footer .social__link {
 		font-weight: 600;
 		font-size: 3.87rem;
 	}
-
+	.banner__join-title {
+		margin-bottom: 1rem;
+	}
 	.banner__join div {
-		width: 20rem;
+		width: auto;
+		margin: 0 auto;
+	}
+	.banner__join input {
+		flex-basis: content;
 	}
 	.banner__join div p {
 		padding-left: 1rem;
