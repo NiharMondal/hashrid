@@ -12,17 +12,18 @@
 
 		<!-- stylesheet -->
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
 		<main>
-			<nav>
+			<nav data-aos="fade-down">
 				<a href="">
 					<img src="assets/logo.svg" alt="logo" />
 				</a>
 				<button class="lunch_btn">Launch hashrid.</button>
 			</nav>
 			<!-- banner section -->
-			<section class="banner">
+			<section class="banner" data-aos="zoom-in" data-aos-delay="100">
 				<div class="banner__top">
 					<button class="banner__top-active">5000 XP</button>
 				</div>
@@ -68,9 +69,11 @@
 
 			<!-- meet section -->
 			<section class="container meet__hashrid">
-				<button class="btn outline">Meet hashrid.</button>
+				<button class="btn outline" data-aos="fade-up">
+					Meet hashrid.
+				</button>
 
-				<p>
+				<p data-aos="fade-up">
 					Hashrid is a gamified Web3 social platform where users
 					create AI personas, battle with memes, earn XP, unlock NFT
 					badges, and monetize their influence — all without needing
@@ -93,10 +96,10 @@
 
 			<!-- features section -->
 			<section class="container features">
-				<button class="btn outline btn-center">
+				<button class="btn outline btn-center" data-aos="fade-up">
 					Features That Power the Culture
 				</button>
-				<p class="features__description">
+				<p class="features__description" data-aos="fade-up">
 					Hashrid isn't just another platform — it's a social protocol
 					designed for crypto creators, memers, and XP-driven
 					identities. Every feature is gamified, rewarding, and built
@@ -104,7 +107,7 @@
 				</p>
 
 				<div class="features_first">
-					<div class="card">
+					<div class="card" data-aos="fade-left">
 						<div class="small_face_wrapper">
 							<img
 								src="assets/small-face.svg"
@@ -123,7 +126,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" data-aos="fade-up">
 						<div class="small_face_wrapper">
 							<img
 								src="assets/small-face.svg"
@@ -143,7 +146,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card" data-aos="fade-right">
 						<div class="small_face_wrapper">
 							<img
 								src="assets/small-face.svg"
@@ -165,7 +168,7 @@
 				</div>
 
 				<div class="features__second">
-					<div class="features__second-card">
+					<div class="features__second-card" data-aos="fade-up-right">
 						<div>
 							<img src="assets/small-face.svg" alt="small-face" />
 							<div class="card_info">
@@ -185,7 +188,7 @@
 							/>
 						</div>
 					</div>
-					<div class="features__second-card">
+					<div class="features__second-card" data-aos="fade-up-left">
 						<div>
 							<img src="assets/small-face.svg" alt="small-face" />
 							<div class="card_info">
@@ -229,7 +232,7 @@
 				</button>
 
 				<div class="use__hashrid-grid-box">
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img src="assets/earn-xp.svg" alt="earn-xp" />
 
 						<div class="card_info">
@@ -242,7 +245,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img src="assets/earn-xp.svg" alt="earn-xp" />
 
 						<div class="card_info">
@@ -255,7 +258,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" data-aos="flip-up">
 						<img src="assets/earn-xp.svg" alt="earn-xp" />
 
 						<div class="card_info">
@@ -281,9 +284,11 @@
 
 			<section class="our__partners container">
 				<div>
-					<button class="btn outline btn-center">Our Partners</button>
+					<button class="btn outline btn-center" data-aos="fade-up">
+						Our Partners
+					</button>
 
-					<p class="our__partners-short-info">
+					<p class="our__partners-short-info" data-aos="zoom-in-up">
 						Hashrid collaborates with Web3 projects, NFT creators,
 						DeFi communities, and meme DAOs to build the internet’s
 						next social frontier.
@@ -291,23 +296,48 @@
 						Early partners unlock branding tools, XP quests, and
 						access to the Degen feed.
 					</p>
+
 					<div class="partner__wrapper">
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="50"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="150"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="250"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
-						<div class="partner__wrapper-card">
+						<div
+							class="partner__wrapper-card"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
 							<img src="assets/partner1.svg" alt="partner" />
 						</div>
 					</div>
@@ -330,7 +360,7 @@
 
 			<section class="faq">
 				<button class="btn outline btn-center">FAQs</button>
-				<p class="faq__text">
+				<p class="faq__text" data-aos="fade-up">
 					Get clarity on how Hashrid works, what you earn, and why
 					this XP-powered protocol is the next step in Web3 social
 					evolution. We’re building for creators, culture drivers, and
@@ -338,7 +368,11 @@
 				</p>
 
 				<div class="faq_container">
-					<div class="accordion-item">
+					<div
+						class="accordion-item"
+						data-aos="fade-up"
+						data-aos-delay="50"
+					>
 						<div class="accordion-header btn">
 							<p>Do I need crypto to use Hashrid?</p>
 							<span class="icon">+</span>
@@ -352,7 +386,11 @@
 							</p>
 						</div>
 					</div>
-					<div class="accordion-item">
+					<div
+						class="accordion-item"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
 						<div class="accordion-header btn">
 							<p>Do I need crypto to use Hashrid?</p>
 							<span class="icon">+</span>
@@ -366,7 +404,11 @@
 							</p>
 						</div>
 					</div>
-					<div class="accordion-item">
+					<div
+						class="accordion-item"
+						data-aos="fade-up"
+						data-aos-delay="150"
+					>
 						<div class="accordion-header btn">
 							<p>Do I need crypto to use Hashrid?</p>
 							<span class="icon">+</span>
@@ -380,7 +422,11 @@
 							</p>
 						</div>
 					</div>
-					<div class="accordion-item">
+					<div
+						class="accordion-item"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<div class="accordion-header btn">
 							<p>Do I need crypto to use Hashrid?</p>
 							<span class="icon">+</span>
@@ -398,7 +444,7 @@
 			</section>
 
 			<!-- get notified  -->
-			<section class="get__notified">
+			<section class="get__notified" data-aos="fade-up">
 				<div class="get__notified-heading">
 					Ready to earn your place in the meme metaverse?
 				</div>
@@ -438,5 +484,11 @@
 		</main>
 
 		<script src="app.js"></script>
+
+		<!-- initializing aos library -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
