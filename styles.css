@@ -380,8 +380,6 @@ nav .lunch_btn{
 .our__partners{
     position: relative;
     padding: 2rem 5rem;
-    
-
 }
 .line__style {
     filter: blur(6px);
@@ -616,11 +614,19 @@ footer .social__link{
     .banner__join div p {
         padding-left: 1rem;   
     }
+    .meet__hashrid{
+        padding: 1rem;
+    }
+    .meet__hashrid p, .features__description{
+        font-size: 22px;
+    }
+    .features_first{
+        margin-top: 2.5rem; 
+    }
 
     .features_first, .features__second {
-        display: flex;
-        padding: .15rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: .15rem !important;
         gap: 2.5rem;   
     }
     .features__second{
@@ -637,9 +643,9 @@ footer .social__link{
 
     }
     .use__hashrid-grid-box{
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        padding:.15rem;
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 100% !important;
+        padding:.15rem !important;
     }
     .our__partners{
         padding: 1.5rem;
@@ -650,11 +656,17 @@ footer .social__link{
     }
 
     .partner__wrapper img{
-        width: 10rem;
+        width: 10rem !important;
+    }
+    .our__partners .our__partners-short-info{
+        font-size: 22px;
     }
     .faq {
         margin-top: 2.5rem;
-        padding: 1.5rem;   
+        padding: 1.5rem !important;   
+    }
+    .faq .faq__text{
+        font-size: 22px;
     }
     .faq_container{        
         gap: 1rem;
@@ -664,14 +676,13 @@ footer .social__link{
     }
     
     .get__notified{
-        padding: 1.5rem;
+        padding: 1.5rem !important;
     }
     .get__notified  .get__notified-heading{
         position: relative;
-
-            font-size: 2.5rem;
+        font-size: 2.5rem;
             
-        }
+    }
 
     .get__notified-email{
         position: relative;
@@ -694,10 +705,10 @@ footer .social__link{
                     
     }
     footer {
-            
         flex-direction: column-reverse;
         padding: 1.5rem;
         gap: 1.5rem;
+        text-align: center;
     }
 
     footer .right__side{
@@ -711,5 +722,70 @@ footer .social__link{
 
     footer .social__link{
         margin-bottom: 2.5rem;
+    }
+}
+
+@media  screen and (max-width: 769px) {
+    nav{
+        padding: 1rem;
+    }
+    .features_first{
+        margin-top: 3rem;
+    }
+    .features_first, .features__second {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        gap: 2.5rem;  
+    }
+
+    .use__hashrid-grid-box{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 3.5rem;
+    }
+    .partner__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;     
+    }
+    .partner__wrapper img{
+        width: 15rem;
+    }
+
+    .faq {
+        margin-top: 2.5rem;
+        padding: 3.5rem;   
+    }
+    .faq_container{        
+        gap: 1rem;
+    }
+    .accordion-item{
+        min-width: 100%;;
+    }
+    .get__notified{
+        padding: 3.5rem;
+    }
+    .get__notified  .get__notified-heading{
+        position: relative;
+        font-size: 3.5rem;
+            
+    }
+    .get__notified-email{
+        position: relative;
+        margin-top: 2rem;
+        padding-right: 0;
+                   
+        min-width: 100%;        
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        text-align: center;
     }
 }
